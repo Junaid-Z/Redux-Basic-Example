@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -65,4 +71,45 @@ code {
 
 input:focus {
   outline: none;
+}
+
+.productsContainer {
+  padding: 1rem 2rem;
+}
+
+.productsContainer .row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  row-gap: 1rem;
+}
+
+.productCard {
+  border-radius: 14px;
+  margin: 0 5px;
+  border: 2px solid #2222226d;
+  padding: 1rem;
+  width: calc(calc(100% / 3) - 10px);
+  height: 350px;
+}
+
+.productCard .imageHolder {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.productCard .imageHolder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.productCard .description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
