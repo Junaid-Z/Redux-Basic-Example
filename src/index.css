@@ -17,6 +17,12 @@ code {
   gap: 1rem;
   padding: 2rem;
   flex-direction: column;
+  width: 700px;
+  margin: auto;
+  margin-top: auto;
+  background-color: #e5f3ff;
+  border-radius: 20px;
+  margin-top: 40px;
 }
 
 .counter .count {

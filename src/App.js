@@ -1,7 +1,9 @@
 
 import './App.css';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-import Counter from './Counter';
+import Counter from './pages/Counter';
+import Login from './pages/Login';
+import Home from './pages/Home';
 
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<Counter />} />
+				<Route path='/home' element={<Home />} />
+				<Route path='/login' element={<Login />} />
 			</Routes>
 		</BrowserRouter>
 	);
